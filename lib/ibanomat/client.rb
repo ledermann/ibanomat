@@ -7,7 +7,6 @@ module Ibanomat
   def self.find(options)
     raise ArgumentError.new unless options.is_a?(Hash)
     raise ArgumentError.new('Option :bank_code is missing!') if options[:bank_code].empty?
-    raise ArgumentError.new('Option :bank_code_number is missing!') if options[:bank_account_number].empty?
 
     response = RestClient.get URL, {
                                 :params => {
