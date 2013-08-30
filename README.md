@@ -1,5 +1,10 @@
 # IBANomat
 
+[![Build Status](https://secure.travis-ci.org/ledermann/ibanomat.png)](http://travis-ci.org/ledermann/ibanomat)
+[![Code Climate](https://codeclimate.com/github/ledermann/ibanomat.png)](https://codeclimate.com/github/ledermann/ibanomat)
+[![Gem Version](https://badge.fury.io/rb/ibanomat.png)](http://badge.fury.io/rb/ibanomat)
+[![Dependency Status](https://gemnasium.com/ledermann/ibanomat.png)](https://gemnasium.com/ledermann/ibanomat)
+
 The gem is a wrapper for a [web service of the german "Sparkasse"](http://www.sparkasse.de/firmenkunden/konto-karte/iban-rechner.html). It calculates the **IBAN** for a given Bankleitzahl (BLZ) and bank account number. Behind the scenes the web service returns JSON ([Example here](http://www.sparkasse.de/firmenkunden/konto-karte/iban-resources/iban/iban.php?bank-code=37040044&bank-account-number=0532013000))
 
 **WARNING: I'm not affiliated in any way with the web service or the Sparkasse. The web service seems not to be official. Maybe it will be offline soon. I don't find any terms of use on their website. Use this gem at your own risk!**
@@ -30,7 +35,6 @@ Or install it yourself as:
   #     :bank_name => 'Commerzbank',
   #     :bic       => 'COBADEFFXXX',
   #     :iban      => 'DE89370400440532013000',
-  #     :code      => '00'
   # }
 ```
 
