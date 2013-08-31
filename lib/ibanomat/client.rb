@@ -18,15 +18,13 @@ module Ibanomat
     if response.code == 200
       hash = JSON.parse(response)
 
-      case hash['RetCode']
-      when '00'
-        { :bank_name => hash['Institutsname'],
-          :bic       => hash['BIC'],
-          :iban      => hash['IBAN']
-        }
-      else
-        :error
-      end
+      { :bank_name           => hash['Institutsname'],
+        :bic                 => hash['BIC'],
+        :iban                => hash['IBAN'],
+        :bank_code           => hash['BLZ'],
+        :bank_account_number => hash['KtoNr'],
+        :return_code         => hash['RetCode']
+      }
     end
   end
 end

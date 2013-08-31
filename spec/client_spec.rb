@@ -55,8 +55,8 @@ describe Ibanomat do
             to_return(:status => 200, :body => json_response)
         end
 
-        it 'should return error' do
-          subject.should == :error
+        it 'should return error code' do
+          subject[:return_code].should == '10'
         end
       end
     end

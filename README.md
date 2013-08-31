@@ -28,14 +28,19 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-  Ibanomat.find :bank_code => '37040044', :bank_account_number => '0532013000'
+  Ibanomat.find :bank_code => '37040044', :bank_account_number => '532013000'
   # =>
   # {
-  #     :bank_name => 'Commerzbank',
-  #           :bic => 'COBADEFFXXX',
-  #          :iban => 'DE89370400440532013000'
+  #             :bank_name => 'Commerzbank',
+  #                   :bic => 'COBADEFFXXX',
+  #                  :iban => 'DE89370400440532013000',
+  #             :bank-code => '37040044',
+  #   :bank_account_number => '0532013000',
+  #           :return_code => '00'
   # }
 ```
+
+A `return_code` other than '00' indicates a warning or error.
 
 
 ## Contributing
