@@ -2,7 +2,7 @@ require 'rest-client'
 require 'json'
 
 module Ibanomat
-  URL = 'http://www.sparkasse.de/firmenkunden/konto-karte/iban-resources/iban/iban.php'
+  URL = 'https://www.sparkasse.de/firmenkunden/konto-karte/iban-resources/iban/iban.php'
 
   def self.find(options)
     raise ArgumentError.new unless options.is_a?(Hash)
