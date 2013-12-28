@@ -11,7 +11,7 @@ The gem is a Ruby wrapper for a [web service of the german "Sparkasse"](http://w
 
 ## Requirements
 
-Ruby 1.8.7 or newer. Ruby 2.0 recommended.
+Ruby 1.8.7 or newer. Ruby 2.x recommended.
 
 
 ## Installation
