@@ -27,15 +27,15 @@ describe Ibanomat do
         end
 
         it 'should return bank_name' do
-          subject[:bank_name].should == 'Commerzbank'
+          expect(subject[:bank_name]).to eq('Commerzbank')
         end
 
         it 'should return BIC' do
-          subject[:bic].should == 'COBADEFFXXX'
+          expect(subject[:bic]).to eq('COBADEFFXXX')
         end
 
         it 'should return IBAN' do
-          subject[:iban].should == 'DE89370400440532013000'
+          expect(subject[:iban]).to eq('DE89370400440532013000')
         end
       end
 
@@ -56,7 +56,7 @@ describe Ibanomat do
         end
 
         it 'should return error code' do
-          subject[:return_code].should == '10'
+          expect(subject[:return_code]).to eq('10')
         end
       end
     end
