@@ -54,3 +54,8 @@ A `return_code` other than '00' indicates a warning or error.
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+
+# Author
+
+Copyright (c) 2013-2015 Georg Ledermann, released under the MIT license
