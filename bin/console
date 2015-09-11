@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'ibanomat'
+
+$LOAD_PATH.unshift(File.expand_path('..', File.dirname(__FILE__)))
+
+require 'irb'
+IRB.start
