@@ -1,9 +1,9 @@
 # IBANomat
 
-[![Build Status](https://secure.travis-ci.org/ledermann/ibanomat.png)](http://travis-ci.org/ledermann/ibanomat)
-[![Code Climate](https://codeclimate.com/github/ledermann/ibanomat.png)](https://codeclimate.com/github/ledermann/ibanomat)
-[![Gem Version](https://badge.fury.io/rb/ibanomat.png)](http://badge.fury.io/rb/ibanomat)
-[![Dependency Status](https://gemnasium.com/ledermann/ibanomat.png)](https://gemnasium.com/ledermann/ibanomat)
+[![Build Status](https://secure.travis-ci.org/ledermann/ibanomat.svg)](http://travis-ci.org/ledermann/ibanomat)
+[![Code Climate](https://codeclimate.com/github/ledermann/ibanomat.svg)](https://codeclimate.com/github/ledermann/ibanomat)
+[![Gem Version](https://badge.fury.io/rb/ibanomat.svg)](http://badge.fury.io/rb/ibanomat)
+[![Dependency Status](https://gemnasium.com/ledermann/ibanomat.svg)](https://gemnasium.com/ledermann/ibanomat)
 
 The gem is a Ruby wrapper for a [web service of the german "Sparkasse"](https://www.sparkasse.de/unsere-loesungen/privatkunden/rund-ums-konto/iban-rechner.html). It calculates the **IBAN** for a given bank code (in German "Bankleitzahl") and bank account number ("Kontonummer"). Behind the scenes the web service returns JSON ([Example here](https://www.sparkasse.de/bin/servlets/sparkasse/iban?a=0532013000&b=37040044))
 
