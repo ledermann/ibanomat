@@ -5,7 +5,8 @@
 [![Gem Version](https://badge.fury.io/rb/ibanomat.png)](http://badge.fury.io/rb/ibanomat)
 [![Dependency Status](https://gemnasium.com/ledermann/ibanomat.png)](https://gemnasium.com/ledermann/ibanomat)
 
-The gem is a Ruby wrapper for a [web service of the german "Sparkasse"](https://www.sparkasse-koelnbonn.de/privatkunden/banking/auslandszahlungen/iban/). It calculates the **IBAN** for a given bank code (in German "Bankleitzahl") and bank account number ("Kontonummer"). Behind the scenes the web service returns JSON ([Example here](https://www.sparkasse-koelnbonn.de/module/iban/iban.php?bank-code=37040044&bank-account-number=0532013000))
+The gem is a Ruby wrapper for a [web service of the german "Sparkasse"](https://www.sparkasse.de/unsere-loesungen/privatkunden/rund-ums-konto/iban-rechner.html). It calculates the **IBAN** for a given bank code (in German "Bankleitzahl") and bank account number ("Kontonummer"). Behind the scenes the web service returns JSON ([Example here](https://www.sparkasse.de/bin/servlets/sparkasse/iban?a=0532013000&b=37040044))
+
 
 **WARNING: I'm not affiliated in any way with the web service or the Sparkasse. The web service seems not to be official. Maybe it will be offline soon. I didn't find any terms of use on their website. Use this gem at your own risk!**
 

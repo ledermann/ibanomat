@@ -20,8 +20,8 @@ describe Ibanomat do
 
           stub_request(:get, Ibanomat::URL).
             with(:query => {
-              'bank-code'           => '37040044',
-              'bank-account-number' => '0532013000'
+              'b' => '37040044',
+              'a' => '0532013000'
             }).
             to_return(:status => 200, :body => json_response)
         end
@@ -49,8 +49,8 @@ describe Ibanomat do
 
           stub_request(:get, Ibanomat::URL).
             with(:query => {
-              'bank-code'           => '37040044',
-              'bank-account-number' => '0532013000'
+              'b' => '37040044',
+              'a' => '0532013000'
             }).
             to_return(:status => 200, :body => json_response)
         end
@@ -65,8 +65,8 @@ describe Ibanomat do
       before :each do
         stub_request(:get, Ibanomat::URL).
           with(:query => {
-            'bank-code'           => '37040044',
-            'bank-account-number' => '0532013000'
+            'b' => '37040044',
+            'a' => '0532013000'
           }).
           to_return(:status => 404)
       end
@@ -82,8 +82,8 @@ describe Ibanomat do
       before :each do
         stub_request(:get, Ibanomat::URL).
           with(:query => {
-            'bank-code'           => '37040044',
-            'bank-account-number' => '0532013000'
+            'b' => '37040044',
+            'a' => '0532013000'
           }).
           to_timeout
       end

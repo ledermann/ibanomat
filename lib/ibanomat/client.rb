@@ -2,7 +2,7 @@ require 'rest-client'
 require 'json'
 
 module Ibanomat
-  URL = 'https://www.sparkasse-koelnbonn.de/module/iban/iban.php'
+  URL = 'https://www.sparkasse.de/bin/servlets/sparkasse/iban'
 
   def self.find(options)
     raise ArgumentError.new unless options.is_a?(Hash)
@@ -11,8 +11,8 @@ module Ibanomat
 
     response = RestClient.get URL, {
                                 :params => {
-                                  'bank-code'           => options[:bank_code],
-                                  'bank-account-number' => options[:bank_account_number]
+                                  'b' => options[:bank_code],
+                                  'a' => options[:bank_account_number]
                                 },
                                 :accept => :json
                               }
