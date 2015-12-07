@@ -38,7 +38,7 @@ Or install it yourself as:
   #             :bank_name => 'Commerzbank',
   #                   :bic => 'COBADEFFXXX',
   #                  :iban => 'DE89370400440532013000',
-  #             :bank-code => '37040044',
+  #             :bank_code => '37040044',
   #   :bank_account_number => '0532013000',
   #           :return_code => '00'
   # }
