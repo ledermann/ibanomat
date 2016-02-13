@@ -74,7 +74,7 @@ describe Ibanomat do
       it 'should raise exception' do
         expect {
           subject
-        }.to raise_error(RestClient::ResourceNotFound)
+        }.to raise_error(Ibanomat::ResourceNotFoundError)
       end
     end
 
@@ -91,7 +91,7 @@ describe Ibanomat do
       it 'should raise exception' do
         expect {
           subject
-        }.to raise_error(RestClient::RequestTimeout)
+        }.to raise_error(Timeout::Error)
       end
     end
   end
