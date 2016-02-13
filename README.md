@@ -12,7 +12,7 @@ The gem is a Ruby wrapper for a [web service of the german "Sparkasse"](https://
 
 ## Requirements
 
-Ruby 1.9.3 or newer.
+Ruby 2.0.0 or newer.
 
 
 ## Installation
