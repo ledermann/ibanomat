@@ -59,4 +59,4 @@ A `return_code` other than '00' indicates a warning or error.
 
 # Author
 
-Copyright (c) 2013-2015 Georg Ledermann, released under the MIT license
+Copyright (c) 2013-2016 Georg Ledermann, released under the MIT license
