@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name = 'ibanomat'
   spec.version = Ibanomat::VERSION
   spec.authors = ['Georg Ledermann']
-  spec.email = ['mail@georg-ledermann.de']
+  spec.email = ['georg@ledermann.dev']
   spec.description = 'Germany only: Bankleitzahl & Kontonummer => IBAN'
   spec.summary =
     'Wrapper for a web service to calculate the IBAN of german bank account numbers'
